@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="HTMLPage.htm">
+    <None Include="styles.css">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Portfolio.htm">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>

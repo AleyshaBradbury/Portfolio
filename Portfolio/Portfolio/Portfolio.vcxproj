@@ -139,9 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="HTMLPage.htm">
+    <None Include="Portfolio.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="styles.css" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
