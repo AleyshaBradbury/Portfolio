@@ -1,10 +1,68 @@
 <HTML>
 <HEAD>
     <META NAME="GENERATOR" Content="Microsoft Visual Studio">
-    <TITLE>"Portfolio"</TITLE>
-    <link rel="stylesheet" href="styles.css" />
+    <TITLE>Portfolio</TITLE>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="js/handle_tabs.js"></script>
 </HEAD>
 <BODY>
+    <h1>Aleysha Bradbury's Portfolio</h1>
+    <div id="tab_buttons" class="tab">
+        <button id="honours_tab_button" class="tablinks tab_button" onclick="ChangeTab(event, 'honours_project')">
+            Honours Project
+        </button>
+        <button id="card_game_tab_button" class="tablinks tab_button" onclick="ChangeTab(event, 'card_game')">
+            Card Game
+        </button>
+        <button id="html_project_tab_button" class="tablinks tab_button" onclick="ChangeTab(event, 'html_game')">
+            HTML Game
+        </button>
+    </div>
+    <div id="honours_project" class="tabcontent">
+        Link to repo to download: <a href="https://github.com/AleyshaBradbury/Demo">Honours Project Game</a>
+        <br />
+        <br />
+        <img src="Pictures/HonoursProject.png" alt="HonoursProjectImage1">
+        <p>
+            In this project I created a turn/grid based game where the player has to move
+            across the grid, talking to the blue npcs and completing quests for them. <br />
 
+            This was a solo project and was made using
+            <a href="https://www.sfml-dev.org/">SFML</a>.<br />
+
+            For this project I implemented the A* algorithm for pathfinding across the
+            grid and I also had to create an algorithm for procedurally generating the
+            quests.
+        </p>
+    </div>
+    <div id="card_game" class="tabcontent">
+        Link to repo to download: <a href="https://github.com/AleyshaBradbury/Card-Game">Card Game</a>
+        <br />
+        <br />
+        <img src="Pictures/CardGame.png" alt="CardGameImage1">
+        <p>
+            In this project I made a basic card game where the player plays their
+            cards then the enemy will hit the player on their turn. The player
+            has to press R on their keyboard to end their turn. This is a left over
+            from when it meant R for Reset Hand and I never changed it.<br />
+
+            This was a solo project and was made using
+            <a href="https://www.sfml-dev.org/">SFML</a>.
+        </p>
+    </div>
+    <div id="html_game" class="tabcontent">
+        Link to game: <a href="https://raw.githack.com/xfactory2442/Idle_Game/master/Idle%20Game%20Maybe/MainPage.htm">HTML Game</a>
+        <br />
+        <p>
+            This project is the first time I'm messing around with HTML/JavaScript. The game is a 
+            very early version of an incremental/idle game cause those work well for what I
+            was trying to learn. <br />
+            The player starts out with one button to press and two
+            tabs and as they play the game they unlock more options for buttons. <br />
+            The player can also change the colour of all of the buttons which I added
+            1) because of colour blind people who might look at it and 2) because I wanted
+            to figure out how to change the style of something using JavaScript.
+        </p>
+    </div>
 </BODY>
 </HTML>

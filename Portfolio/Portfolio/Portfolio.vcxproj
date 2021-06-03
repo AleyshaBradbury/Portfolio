@@ -139,10 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="js\handle_tabs.js" />
     <None Include="Portfolio.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="styles.css" />
+    <None Include="stylesheet.css" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
