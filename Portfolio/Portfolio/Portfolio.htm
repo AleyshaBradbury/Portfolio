@@ -20,6 +20,9 @@
         <button id="procedural_generation_tab_button" class="tablinks tab_button" onclick="ChangeTab(event, 'procedural_generation')">
             Procedural Terrain Generation
         </button>
+        <button id="groundhob_blob_tab_button" class="tablinks tab_button" onclick="ChangeTab(event, 'groundhog_blob')">
+            Groundhog Blob
+        </button>
     </div>
     <div id="honours_project" class="tabcontent">
         Link to repo to download: <a href="https://github.com/AleyshaBradbury/Demo">Honours Project Game</a>
@@ -29,13 +32,28 @@
         <p>
             In this project I created a turn/grid based game where the player has to move
             across the grid, talking to the blue npcs and completing quests for them. <br />
-
+            This game is a proof of concept and therefore is lacking mechanics and not very
+            fun to play. <br />
             This was a solo project and was made using
             <a href="https://www.sfml-dev.org/">SFML</a>.<br />
 
-            For this project I implemented the A* algorithm for pathfinding across the
-            grid and I also had to create an algorithm for procedurally generating the
-            quests.
+            <br />
+            The blue area around the player is generated using the A* algorithm which will
+            find which squares the player can move to. Then, if the player clicks within
+            this blue area the player will move to that spot on the grid. <br />
+            The blue squares with numbers on them are NPC and they will generate quests on
+            their turn. These quests are generated based on 2 parameters: a set of needs
+            and a set of relationships. <br />
+            The NPC's needs are a list of some of the resources in
+            the game which are then randomly given a number between 0 and 9 at the start of the
+            game. This number is then increased on the NPCs turn. The closer to 9 the number is
+            the more likely that resource will be included in any quests the NPC generates.
+            Completing a quest should lower the included needs numbers to show that the
+            need has been taken care of. <br />
+            The NPC holds relationships between itself and the other NPCs. The NPC's relationship
+            with the player determines how hard the quests that NPC generates will be.
+            The more the NPC likes the player (the closer the number is to 9), the less
+            resources they will ask for.
         </p>
     </div>
     <div id="card_game" class="tabcontent">
@@ -76,9 +94,47 @@
             Throught a third year module we were taught many terrian generation techniques
             which we were then to collate together for the final submission.
             This is the final submission for that module.<br />
-
+            <br />
+            This project includes: <br />
+            - Procedural generation of trees. <br />
+            - Generating a random height field for the terrain which can then be used with
+            other techniques to create an interesting terrain. <br />
+            - Faulting the terrian to create different layered area. <br />
+            - Using the diamond-square algorithm. <br />
+            - Using perlin noise to smooth out terrains. <br />
+            - Using Voronoi Regeions to split the terrian into sections. This has not been
+            used in this project to make interesting terrains but could be used in the future
+            to split a terrain into pieces and use different techniques on each part for a
+            more varied terrain. <br />
+            <br />
             This was a solo project and was made using a framework for DirectX given
             to students to use.
+        </p>
+    </div>
+    <div id="groundhog_blob" class="tabcontent">
+        Link to repo to download: <a href="https://github.com/xfactory2442/GroundhogBlob">Groundhog Blob</a>
+        <br />
+        <br />
+        <img src="https://raw.githubusercontent.com/AleyshaBradbury/Portfolio/main/Portfolio/Portfolio/Pictures/GroundhogBlob.PNG" alt="ProceduralGenerationImage1">
+        <p>
+            I made this game as a passion project. I wanted to try making a game
+            which would gradually unlock new mechanics and tabs as you played.
+            I was very into incremental games at the time so based the game off
+            those kinds of mechanics. <br />
+            <br />
+            In this game you are a blob newly created in this world. You have 
+            three time slots to fill (morning, afternoon, evening) and 
+            when you assign a timeslot a task, the blob will do that
+            task in that timeslot when the day progresses. The blob begins by
+            only being able to think but they gain more actions later in the game.
+            When the blob dies, the next blob will inherit some knowlege of
+            how to do the actions commited in that run which will increase the 
+            blobs progress when completing those actions. <br />
+            <br />
+            The game in its current state is unfinished and may contain bugs. <br />
+            <br />
+            This was a solo project and was made using
+            <a href="https://www.sfml-dev.org/">SFML</a>.
         </p>
     </div>
 </BODY>
